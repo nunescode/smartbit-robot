@@ -1,0 +1,42 @@
+{
+  "login": {
+    "account": {
+      "name": "Henriques",
+      "email": "henriques@party.com",
+      "cpf": "45215358010"
+    },
+    "plan": {
+      "name": "Plano Black",
+      "id": 2,
+      "price": 79.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Henrique",
+      "month": "12",
+      "year": "2030",
+      "cvv": "123"
+    }
+  },
+  "update": {
+    "account": {
+      "name": "Dwayne Johnson",
+      "email": "opedra@party.com",
+      "cpf": "70378982010",
+      "weight": 78,
+      "height": 170
+    },
+    "plan": {
+      "name": "Plano Black",
+      "id": 2,
+      "price": 79.99
+    },
+    "credit_card": {
+      "number": "4242424242424242",
+      "holder": "Dwayne Johnson",
+      "month": "12",
+      "year": "2030",
+      "cvv": "123"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+    "create": {
+        "account":{
+            "name": "Ednaldo Pereira",
+            "email": "ednaldopereira@party.com",
+            "cpf": "09478051091"
+        },
+        "plan": {
+            "name": "Plano Black",
+            "id": 2,
+            "price": 79.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Ednaldo Pereira",
+            "month": "12",
+            "year":"2030",
+            "cvv":"123"
+        }
+    },
+    "duplicate": {
+        "account":{
+            "name": "Karina Xavier",
+            "email": "XavierKarina@party.com",
+            "cpf": "39710245058"
+        }, 
+        "plan": {
+            "name": "Plano Smart",
+            "id": 1,
+            "price": 99.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Karina Xavier",
+            "month": "12",
+            "year":"2030",
+            "cvv":"123"
+        }
+
+    },
+    "search": {
+        "account":{
+            "name": "Julio Cesar",
+            "email": "Lujin@party.com",
+            "cpf": "31764308093"
+        }, 
+        "plan": {
+            "name": "Plano Smart",
+            "id": 1,
+            "price": 99.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Julio Cesar",
+            "month": "12",
+            "year":"2030",
+            "cvv":"123"
+        }
+
+    },
+    "remove": {
+        "account":{
+            "name": "Mario Santana",
+            "email": "brosramio@party.com",
+            "cpf": "10401835065"
+        }, 
+        "plan": {
+            "name": "Plano Black",
+            "id": 2,
+            "price": 79.99
+        },
+        "credit_card": {
+            "number": "4242424242424242",
+            "holder": "Mario Santana",
+            "month": "12",
+            "year":"2030",
+            "cvv":"123"
+        }
+
+    }
+}
