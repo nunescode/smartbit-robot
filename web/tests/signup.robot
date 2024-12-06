@@ -16,19 +16,15 @@ ${VALID_CPF}      41991734042
 
 
 *** Test Cases ***
-# Caso de teste 1: Deve iniciar o cadastro do cliente com sucesso
 Deve iniciar o cadastro do cliente
     [Tags]    smoke
     
-    ${account}        Get Fake Account    # Gera uma conta fictícia para simular os dados do cliente 
+    ${account}    Get Fake Account
 
-    # Envia o formulário de cadastro com os dados gerados
     Submit signup form    ${account}    
 
-    # Aguarda que o elemento contendo o texto esperado seja exibido
     Verify welcome message
 
-# Caso de teste 2: Verifica que o campo "nome" é obrigatório
 Tentativa de pré-cadastro
     [Template]    Attempt signup
 

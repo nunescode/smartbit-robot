@@ -7,3 +7,4 @@ robotframework-browser==18.9.1
 robotframework-jsonlibrary==0.5
 robotframework-pythonlibcore==4.4.1
 robotframework-requests==0.9.7
+python_dotenv==1.0.1

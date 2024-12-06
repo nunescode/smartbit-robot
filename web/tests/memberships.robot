@@ -2,7 +2,8 @@
 Documentation     Suite de testes de adesões de planos
 
 Resource          ../resources/Base.resource
-Library           ../resources/libs/Database.py
+
+Library           ../../libs/Database.py
 
 Test Setup        Start session
 Test Teardown     Take Screenshot
@@ -22,9 +23,9 @@ Deve poder realizar uma nova adesão
     Signin admin
 
     Go to memberships
-    Create new membership    ${data}
+    Create new membership      ${data}
 
-    Toast should be       Matrícula cadastrada com sucesso.
+    Toast should be            Matrícula cadastrada com sucesso.
 
     Sleep    2
 
@@ -38,7 +39,7 @@ Não deve realizar adesão duplicada
     Signin admin
     Go to memberships
     Create new membership    ${data}
-    Toast should be    O usuário já possui matrícula.
+    Toast should be          O usuário já possui matrícula.
     
 Deve buscar por nome
     [Tags]     search
@@ -61,7 +62,8 @@ Deve excluir uma matricula
 
     Signin admin
     Go to memberships
+
     Request removal    ${data}[account][name]
     Confirm removal
+
     Membership should not be visible    ${data}[account][name]
-    

@@ -7,7 +7,7 @@ Library        Browser
 Notice should be
     [Arguments]        ${target}
 
-    ${element}        Set Variable       css=form .notice
+    ${element}         Set Variable       css=form .notice
 
     Wait For Elements State    
     ...    ${element}

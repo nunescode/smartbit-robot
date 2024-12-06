@@ -10,11 +10,11 @@ Toast should be
 
     ${selector}        Set Variable        .Toastify__toast-body
 
-    Wait For Elements State        css=${selector}
+    Wait For Elements State    css=${selector}
     ...    visible    5 
 
     Get Text    css=${selector}
     ...    equal    
     ...    ${expected_text}
     
-    Take Screenshot        selector=${selector}
+    Take Screenshot    selector=${selector}

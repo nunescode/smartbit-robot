@@ -1,13 +1,18 @@
 import psycopg2
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 db_conn = {
-    "host": "localhost",
-    "port": "5432",
-    "dbname": "smartbit",
-    "user": "postgres",
-    "password": "QAx@123",
+    "host": os.getenv("DB_HOST"),
+    "port": os.getenv("DB_PORT"),
+    "dbname": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASS"),
 }
 
+print(db_conn) 
 
 def execute(query):
     conn = None

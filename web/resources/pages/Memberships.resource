@@ -31,7 +31,7 @@ Select account
 Select plan
     [Arguments]      ${plan_name}    
 
-    Fill Text        css=input[aria-label=select_plan]        ${plan_name}
+    Fill Text        css=input[aria-label=select_plan]       ${plan_name}
 
     Click            css=div[class$=option] >> text=${plan_name}
 
@@ -47,7 +47,7 @@ Fill payment card
 Search by name
     [Arguments]    ${name}
     
-    Fill Text    css=input[placeholder^=Busque]    ${name}
+    Fill Text      css=input[placeholder^=Busque]    ${name}
 
     Wait For Elements State    css=strong >> text=Total: 1
     ...    visible    5

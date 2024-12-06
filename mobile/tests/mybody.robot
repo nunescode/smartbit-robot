@@ -9,9 +9,10 @@ Test Teardown     Finish session
 *** Test Cases ***
 Deve poder cadastrar minhas medidas
     ${data}    Get Json fixture    update
-    Insert Membership    ${data}
+    
+    Insert Membership         ${data}
 
-    Signin with document    ${data}[account][cpf]
+    Signin with document      ${data}[account][cpf]
     User is logged in
 
     Touch my body
@@ -20,7 +21,7 @@ Deve poder cadastrar minhas medidas
     Popup have text           Seu cadastro foi atualizado com sucesso
     Set user token
     
-    ${account}         Get account by name    ${data}[account][name]
+    ${account}         Get account by name        ${data}[account][name]
 
-    Should Be Equal    ${account}[weight]    ${data}[account][weight]
-    Should Be Equal    ${account}[height]    ${data}[account][height]
+    Should Be Equal    ${account}[weight]         ${data}[account][weight]
+    Should Be Equal    ${account}[height]         ${data}[account][height]

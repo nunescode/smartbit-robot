@@ -10,4 +10,3 @@ Deve exibir o Slogan da Smartbit na Landing Page
     Get Text    css=.headline h2    equal    Sua Jornada Fitness Começa aqui!
 
     Sleep    5
-    

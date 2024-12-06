@@ -2,6 +2,7 @@
 
 Documentation        Arquivo principal do projeto Robot Framework
 
+Variables      Env.py
 
 Library        Browser
 Library        JSONLibrary
@@ -29,8 +30,7 @@ ${ADMIN_PASS}     pwd123
 *** Keywords ***
 Start session
     New Browser        browser=chromium        headless=False
-    New Page           http://localhost:3000
-
+    New Page           ${BASE_URL}
 Get Json fixture
     [Arguments]    ${file_name}    ${scenario}
 
@@ -38,9 +38,9 @@ Get Json fixture
     ...        ${EXECDIR}/resources/fixtures/${file_name}.json
     ...        encoding=utf-8
 
-    RETURN    ${data}[${scenario}]
+    RETURN     ${data}[${scenario}]
 
 Signin admin
     Go to login page 
-    Submit login form      ${ADMIN_EMAIL}    ${ADMIN_PASS}
+    Submit login form      ${ADMIN_EMAIL}      ${ADMIN_PASS}
     User is logged in      ${ADMIN_EMAIL}

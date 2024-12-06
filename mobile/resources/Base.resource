@@ -4,6 +4,8 @@ Documentation    Arquivo principal do projeto de testes automatizados para Mobil
 Library        AppiumLibrary
 Library        JSONLibrary
 
+Variables       Env.py
+
 Library        ../../libs/Database.py
 
 Resource        ../../services/Service.resource
